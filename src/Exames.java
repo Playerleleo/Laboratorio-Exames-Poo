@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.time.LocalDate;
 
 public class Exames {
     private String nome;
@@ -49,8 +50,14 @@ public class Exames {
         String mensagem = "Nome: " + this.nome + "\n";
         mensagem += "Tipo sanguinio: " + this.tipoSanguinio + "\n";
         mensagem += "Ano de nacimento: " + this.anoDeNacimento + "\n";
-            JOptionPane.showMessageDialog(null, mensagem);
-        }
+        JOptionPane.showMessageDialog(null, mensagem);
     }
+
+    public Integer pegandoIdade(Integer ano) {
+        int anoAtual = LocalDate.now().getYear();
+        int idade = anoAtual - ano;
+        return idade;
+    }
+}
 
 

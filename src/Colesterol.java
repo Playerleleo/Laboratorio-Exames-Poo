@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.time.LocalDate;
+
 
 public class Colesterol extends Exames{
     private Integer ldl;
@@ -103,13 +103,6 @@ public class Colesterol extends Exames{
         return "Não foi possível classificar";
 
     }
-
-    public Integer pegandoIdade(Integer ano) {
-        int anoAtual = LocalDate.now().getYear();
-        int idade = anoAtual - ano;
-        return idade;
-    }
-
     @Override
     public void mostarResultados() {
         String mensagem = "Nome: " + this.getNome() + "\n";
