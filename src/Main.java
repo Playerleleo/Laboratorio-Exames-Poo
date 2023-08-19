@@ -4,8 +4,6 @@ public class Main {
         exameglicemia.cadastrarExames();
         exameglicemia.mostarResultados();
 
-        var exame = new Exames();
-        exame.cadastrarExames();
-        exame.mostarResultados();
+        var examecolesterol = new Colesterol();
     }
 }

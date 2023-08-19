@@ -37,7 +37,7 @@ public class Glicemia extends Exames {
     @Override
     public void cadastrarExames() {
         super.cadastrarExames();
-        this.glicose = Integer.valueOf(JOptionPane.showInputDialog("Informe sua glicose: "));
+        this.glicose = Integer.valueOf(JOptionPane.showInputDialog("Quantidade Glicose: "));
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Glicemia extends Exames {
         String mensagem = "Nome: " + this.getNome() + "\n";
         mensagem += "Tipo sanguinio: " + this.getTipoSanguinio() + "\n";
         mensagem += "Ano de nacimento: " + this.getAnoDeNacimento() + "\n";
-        mensagem += "Glicose: " + this.glicose + "\n";
+        mensagem += "Resultado: " + this.glicose + "\n";
         mensagem += "Classificação: " + this.classificarResultado(this.glicose) + "\n";
         JOptionPane.showMessageDialog(null, mensagem);
     }
